@@ -125,9 +125,33 @@ name = "김준식"
 print(f"[{name:=^11}]")
 print(f"문자열 실습입니다. {{ 중괄호 }}를 출력해보세요.")
 '''
-
-python ="Hello, Python"
+'''
+# 문자열 슬라이싱
 print(python[7:])
 
 a="20240930"
-print(a[:4]+"년",a[4:6]+"월",a[6:8]+"일")
+print(a[:4]+"년",a[4:6]+"월",a[6:]+"일")
+
+print(len(python))
+print(len(a))
+a ="Hello, Python"
+
+print(a.count('l'))
+'''
+
+'''
+print("1234".isdecimal())
+print("1234".isdigit())
+print("1234".isnumeric())
+'''
+# 실습.종합실습 1
+name = input("이름을 입력하세요. ")
+age =int(input("나이를 입력하세요. "))
+print("안녕하세요!",name+"님",f"({age}세)")
+
+# 실습.종합실습 2
+name = input("이름을 입력하세요. ")
+year_birth =int(input("태어난 년도를 입력하세요. "))
+year_now =int(input("올해 년도를 입력하세요. "))
+age = year_now - year_birth +1
+print(f"올해는{year_now}년, {name}님의 나이는{age}세 입니다.")

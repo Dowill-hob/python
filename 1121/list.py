@@ -135,7 +135,8 @@ print(matrix)
 matrix[0].extend([11, 12])
 print(matrix)
 '''
-
+'''
+# 튜플
 t1 = (1,)  # tuple에서는 요소 1개만 있을때 ',' 필수
 t2 = (1, 2, 3, 4, 5, 6, 3, 3, 3)
 t3 = 1, 2, 3
@@ -146,3 +147,12 @@ print(t3.index(2))
 print(t4[3][0])
 print(len(t4))
 print('c' in t4)
+'''
+'''
+# set
+s1 = {1, 1, 1, 1, 1, 1, 1, 1, 2}
+print(s1)
+s2 = ['안녕', '잘가', 'Hi', 'Hi']
+print(s2)
+print(set(s2))
+'''

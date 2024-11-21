@@ -69,3 +69,80 @@ print(a)
 a.clear()
 print(a)
 '''
+'''
+x = ["q", 'w', 'e', 'r', 'w']
+print(x.count('w'))
+'''
+'''
+# 실습.리스트 연습문제
+rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
+print(rainbow[2])
+rainbow_asc = sorted(rainbow)
+print(rainbow_asc)
+rainbow.append("coral blue")
+print(rainbow)
+del rainbow[3:7] ##### 생각에 넣어놓기
+print(rainbow)
+'''
+'''
+# 이차원 리스트
+# 3*3
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(matrix[2][0])
+# 요소 추가
+matrix[1] = matrix[1] + [99]
+print(matrix)
+# 행 추가
+matrix = matrix+[[10, 11, 12]]
+print(matrix)
+# 요소 수정
+matrix[0][0] = 100
+matrix[1][1] = 5000
+print(matrix)
+# 행 삭제
+del matrix[2]
+print(matrix)
+# 행 개수
+rows = len(matrix)
+print(rows)
+# 열 개수
+cols = len(matrix[0])
+print(cols)
+'''
+'''
+# 이차원 매서드
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# 요소 추가
+matrix[0].append(10)
+print(matrix)
+# 행 추가
+matrix.append([10, 11, 12])
+print(matrix)
+matrix[1].insert(1, 100)
+print(matrix)
+matrix.insert(2, ["안녕하세요", "반갑습니다", "어서오세요"])
+print(matrix)
+
+# 확장
+matrix[0].extend([11, 12])
+print(matrix)
+'''
+
+t1 = (1,)  # tuple에서는 요소 1개만 있을때 ',' 필수
+t2 = (1, 2, 3, 4, 5, 6, 3, 3, 3)
+t3 = 1, 2, 3
+t4 = ('a', 'b', 'c', ("Hi", "thanks"))
+print(t1[0])
+print(t2.count(3))
+print(t3.index(2))
+print(t4[3][0])
+print(len(t4))
+print('c' in t4)

@@ -26,11 +26,15 @@ print("프로그램이 종료되었습니다.")
 
 # 실습.while문
 while True:
-    num = input("숫자를 입력하시오: ,(종료를 원하시면 종료를 입력하세요)")
+    num = input("숫자를 입력하시오 ,(종료를 원하시면 종료를 입력하세요) : ")
     count = 0
     total = 0
     if num == "종료":
         break
+    if not num.isdigit():
+        print("양수만 입력하세요")
+        continue
+    """
     if num.isdecimal() == True:
         num = int(num)
     else:
@@ -39,6 +43,8 @@ while True:
     if num < 0:
         print("양수만 입력하세요")
         continue
+    """
+    num = int(num)
     if num == 0:
         continue
     while count <= num:

@@ -89,9 +89,31 @@ else:
     print("결제방법을 다시확인해 주세요.")
 '''
 
-
+'''
 # 삼항연산자
 
 age = int(input("나이를 입력히세요"))
-message = "20대입니다" if age < 30 and age >= 20 else "20대가 아닙니다."
+# message = "20대입니다" if age < 30 and age >= 20 else "20대가 아닙니다."
+message = "20대입니다" if age < 30 and age >= 20 else "30대 입니다." if age < 40 and age >= 30 else "20대도 30대도 아닙니다."
+
 print(message)
+'''
+'''
+# 조건문에서 in연산자 활용
+fruit = input("과일을 한글로 입력하세요: ")
+
+if fruit in ["사과", "바나나", "복숭아"]:
+    print(f"{fruit}은(는) 과일에 포함되어 있습니다.")
+else:
+    print("존재하지 않는 과일입니다.")
+'''
+'''
+# 실습.in연산자 활용
+fruit_dict = {'apple': 95, 'banana': 105, 'cherry': 50}
+fruit_user = input("과일을 영문으로 입력하세요 : ")
+if fruit_user in fruit_dict:
+    text = fruit_dict[fruit_user]
+    print(f"{fruit_user}의 칼로리는 {text}Kcal입니다.")
+else:
+    print("포함되어있지 않은 과일입니다.")
+'''

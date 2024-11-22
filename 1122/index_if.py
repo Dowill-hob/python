@@ -36,7 +36,7 @@ elif age<50:
 else:
     print("50대입니다.")
 '''
-
+'''
 # 실습.elif
 
 score = int(input("점수를 입력하세요 : "))
@@ -51,3 +51,47 @@ elif score >= 60:
     print("학점 : D")
 else:
     print("학점 : F")
+'''
+'''
+# 실습.중첩 조건문
+age = int(input("나이를 숫자로 입력해주세요 : "))
+creadit = input("결제방법을 입력해주세요 (현금 또는 카드) : ")
+
+if creadit == "카드":
+    if age >= 0 and age < 75:
+        if age < 8:
+            print(f"{age}세의 카드 요금은 무료입니다.")
+        elif age < 14:
+            print(f"{age}세의 카드 요금은 450원 입니다.")
+        elif age < 20:
+            print(f"{age}세의 카드 요금은 720원 입니다.")
+        elif age < 75:
+            print(f"{age}세의 카드 요금은 1200원 입니다.")
+    elif age >= 75:
+        print(f"{age}세의 카드 요금은 무료입니다.")
+    else:
+        print("나이를 다시 확인해주세요")
+elif creadit == "현금":
+    if age >= 0 and age < 75:
+        if age < 8:
+            print(f"{age}세의 현금 요금은 무료입니다.")
+        elif age < 14:
+            print(f"{age}세의 현금 요금은 450원 입니다.")
+        elif age < 20:
+            print(f"{age}세의 현금 요금은 1000원 입니다.")
+        elif age < 75:
+            print(f"{age}세의 현금 요금은 1300원 입니다.")
+    elif age >= 75:
+        print(f"{age}세의 카드 요금은 무료입니다.")
+    else:
+        print("나이를 다시 확인해주세요")
+else:
+    print("결제방법을 다시확인해 주세요.")
+'''
+
+
+# 삼항연산자
+
+age = int(input("나이를 입력히세요"))
+message = "20대입니다" if age < 30 and age >= 20 else "20대가 아닙니다."
+print(message)

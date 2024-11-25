@@ -70,7 +70,14 @@ import keyword
 
 # print("a" not in a) #true
 # print("w" not in a) #False
-
+'''
 num = input("숫자를 입력하세요: ")
 
 print("True면 짝수, False면 홀수 : ", int(num) % 2 == 0)
+'''
+print(
+    " 동해물과 백두산이"
+    " 마르고 닳도록"
+    " 하느님이 보우하사"
+    " 우리나라 만세"
+)

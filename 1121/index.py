@@ -140,11 +140,6 @@ print(a.count('l'))
 '''
 
 '''
-print("1234".isdecimal())
-print("1234".isdigit())
-print("1234".isnumeric())
-'''
-'''
 # 실습.종합실습 1
 name = input("이름을 입력하세요. ")
 age =int(input("나이를 입력하세요. "))
@@ -157,3 +152,6 @@ year_now =int(input("올해 년도를 입력하세요. "))
 age = year_now - year_birth +1
 print(f"올해는{year_now}년, {name}님의 나이는{age}세 입니다.")
 '''
+print("1234".isdecimal())
+print("1234".isdigit())
+print("1234".isnumeric())

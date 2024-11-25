@@ -115,11 +115,11 @@ del dict1['Bob']
 numbers = [1, 2, 3, 4, 5]
 print(sum(numbers))
 
-scores = {"국어": 90, "영어": 80, "수학": 85}
-print(sum(scores.values()))
-'''
 # zip()
 names = ['Alice', 'Bob', 'Charlie', 'David']
 scores = [85, 90, 88, 95]
 zipped = list(zip(names, scores))
 print(zipped)
+'''
+scores = {"국어": 90, "영어": 80, "수학": 85}
+print(sum(scores.values()))

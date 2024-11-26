@@ -213,3 +213,73 @@ lists, counts = count(num)
 print(f"{num}의 배수: {lists}")
 print(f"{num}의 개수: {counts}")
 '''
+
+# # 재귀함수
+# def sos(i):
+#     print("Help me!")
+#     if i == 1:
+#         return ""
+#     else:
+#         return sos(i-1)
+
+
+# sos(10)
+'''
+# n! 재귀함수로 구하기
+def factorial(n):
+    print(f"n의 값:{n}")
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
+print(factorial(3))
+'''
+
+
+# def fibonacci(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+
+
+# n = int(input("피보나치 수열로 구할 n의값은? :"))
+# print(fibonacci(n))
+'''
+def fibonacci(n):
+    if n <= 1:
+        print(n, end=" ")
+        return n
+    else:
+        print(n, end=" ")
+        return fibonacci(n-1) + fibonacci(n-2)
+
+
+print(fibonacci(10))
+'''
+
+# lamda 함수
+# 일반 함수
+
+'''
+def add(x, y):
+    return x + y
+
+
+print(add(3, 4))
+
+
+def add(x, y): return x + y
+
+
+print(add(3, 4))
+'''
+
+
+def square(x): return x ** 2
+
+
+print(square(4))
+print((lambda x: x ** 2)(5))

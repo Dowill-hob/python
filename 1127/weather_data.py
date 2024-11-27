@@ -74,26 +74,26 @@ def main_program():
 
         choice = input("원하는 기능의 번호를 입력하세요: ")
         if choice == '1':
-            city, avg_result = avg_temperatures()
+            city, avg_result = avg_temperatures(weather_data)
             if avg_result is None:
                 print(f"{city}의 정보가 존재하지 않습니다.")
             else:
                 print(f"{city}의 평균 기온: {avg_result:.2f}℃")
 
         elif choice == '2':
-            city, max_value, min_value = max_min_temperatures()
+            city, max_value, min_value = max_min_temperatures(weather_data)
             if max_value is none:
                 print(f"{city}의 정보가 존재하지 않습니다.")
             else:
                 print(f"{city}의 최고기온: {max_value}℃, 최저기온: {min_value}℃")
 
         elif choice == '3':
-            city, total_rain, rainy_days = total_rain_Day()
+            city, total_rain, rainy_days = total_rain_Day(weather_data)
             print(f"{city}의 총 강수량: {total_rain:.1f}mm")
             print(f"{city}의 비가 온 날은: {rainy_days}일")
 
         elif choice == '4':
-            city = add_weather()
+            city = add_weather(weather_data)
             print(f"{city}의 날씨 데이터가 추가되었습니다.")
         elif choice == '5':
             all_weather_date(weather_data)

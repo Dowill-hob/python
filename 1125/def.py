@@ -70,8 +70,8 @@ def sum_mult(num1, num2):
 
 sum_mult(2, 2)
 sum_mult(2, 3)
-'''
-'''
+
+
 # 실습 2
 
 
@@ -188,3 +188,25 @@ while True:
     else:
         break
 '''
+'''# 실습 구구단
+
+
+def calculate_sum(end):
+    total = 0
+    for i in range(1, end+1):
+        total += i
+    return total
+
+
+result = calculate_sum(10)
+print(result)
+'''
+
+
+def times(num):
+    return [i * 3 for i in num]
+
+
+arr = [1, 2, 3, 4, 5]
+newArr = times(arr)
+print(newArr)  # [3,6,9,12,15]

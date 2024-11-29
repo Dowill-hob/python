@@ -91,12 +91,12 @@ print(fruits.items())
 fruits.clear()
 print(fruits)
 '''
-'''
+
 # 실습.딕셔너리
 # 1
 dict1 = {}
 # 2
-dict1 ={   
+dict1 = {
     'Alice': 85,
     'Bob': 90,
     'Charlie': 90
@@ -107,7 +107,7 @@ dict1.update({'David': 80})
 dict1['Alice'] = 88
 # 5
 del dict1['Bob']
-'''
+
 
 # 내장함수
 # sum()

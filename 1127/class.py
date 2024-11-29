@@ -188,7 +188,7 @@ print(market1.show_info())
 market1.change_category("과자")
 print(market1.show_list())
 '''
-
+'''
 # 정보은닉
 
 
@@ -219,3 +219,96 @@ p1.setname("아무개")
 print(p1.getname())
 p1.setage(20)
 print(p1.getage())
+'''
+'''
+# 실습3. 건강상태 클래스 만들기
+
+
+class HealthCondition:
+    def __init__(self):
+        self._name = " "
+        self._hp = 100
+
+    def setname(self, name):
+        self._name = name
+
+    def getname(self):
+        return self._name
+
+    def setHp(self, hp):
+        self._hp = hp
+        # if self._hp >= 100:
+        #     self._hp = 100
+
+    def gethp(self):
+        return self._hp
+
+    def excersise(self, hour):
+        print(f"{hour}시간 운동한다")
+        if self._hp >= 100:
+            self._hp = 100
+        else:
+            self._hp += 1 * hour
+
+    def alcol(self, count):
+        print(f"술을 {count}잔 마신다")
+        if self._hp <= 0:
+            self._hp = 0
+        else:
+            self._hp -= 1 * count
+
+
+p1 = HealthCondition()
+p1.setHp(100)
+p1.setname("나몸짱")
+p1.excersise(5)
+p1.alcol(2)
+print(f"{p1.getname()} - hp: {p1.gethp()}")
+
+print("============================")
+
+p2 = HealthCondition()
+p2.setHp(-1)
+p2.setname("나약해")
+p2.excersise(1)
+p2.alcol(12)
+print(f"{p2.getname()} - hp: {p2.gethp()}")
+'''
+
+# getter, setter 데코레이터
+
+
+class Person:
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+
+    # getter
+    @property
+    def name(self):
+        return self.__name
+
+    # setter
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+    # getter
+    @property
+    def age(self):
+        return self.__age
+
+    # setter
+    @age.setter
+    def age(self, value):
+        self.__age = value
+
+
+p1 = Person("홍길동", 20)
+print(p1.name)
+print(p1.age)
+
+p1.name = "이몽룡"
+p1.age = 24
+print(p1.name)
+print(p1.age)

@@ -87,8 +87,8 @@ for num in numbers:
         print(num, end=" ")
 '''
 
-for i in range(1, 3, 1):
-    print()
-    print(f"{i}", end=" ")
-    for j in range(1, 4, 1):
-        print(f"{j}", end=" ")
+# for i in range(1, 3, 1):
+#     print()
+#     print(f"{i}", end=" ")
+#     for j in range(1, 4, 1):
+#         print(f"{j}", end=" ")

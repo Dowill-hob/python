@@ -97,7 +97,7 @@ c = Child()
 p.greet()
 c.greet()
 '''
-'''
+
 
 class Product:
     def __init__(self, name, price, quantity):
@@ -156,6 +156,7 @@ e1.extend_warranty(12)
 f1 = Food("사과", 3000, 50, "2023-12-29")
 f1.display_info()
 f1.is_expired("2024-11-28")
+
 '''
 
 # 추상화
@@ -193,3 +194,4 @@ kakao = kakaoPay()
 kakao.authnticate()
 kakao.process_payment(pay)
 kakao.payment_info(pay)
+'''

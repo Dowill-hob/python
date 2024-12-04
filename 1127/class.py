@@ -49,7 +49,7 @@ cars = [
 for car in cars:
     print(car)
 '''
-'''
+
 
 class Calculator:
     def __init__(self, num1, num2):
@@ -60,8 +60,6 @@ class Calculator:
         return f"두 수의 합:{self.num1 + self.num2}"
 
     def sub(self):
-        if self.num1 >= self.num2:
-            return f"두 수의 차:{self.num1 - self.num2}"
         return f"두 수의 차:{self.num2 - self.num1}"
 
     def mul(self):
@@ -79,7 +77,7 @@ print(number1.add())
 print(number1.sub())
 print(number1.mul())
 print(number1.div())
-'''
+
 '''
 # 클래스변수와 인스턴스 변수
 

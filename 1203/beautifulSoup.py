@@ -80,6 +80,7 @@
 # title = soup.select_one(".article_header #article_title_h2")
 
 # with open("news.txt", "w", encoding="utf-8") as file:
+# with open("news.txt", "w", encoding="utf-8") as file:
 #     file.write(f"{title.text.strip()}\n {date.text}")
 #     for i in contents:
 #         file.write(i.text)

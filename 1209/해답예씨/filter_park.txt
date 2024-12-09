@@ -1,0 +1,4 @@
+남산공원(회현)  data 
+Empty DataFrame
+Columns: [구분, 위치(구역명), 운동기구 기종명, 운동기구 수량, 관리번호, 관리기관]
+Index: []

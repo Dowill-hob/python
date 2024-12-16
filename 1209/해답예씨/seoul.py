@@ -2,25 +2,25 @@ import pandas as pd
 
 file_name = "./1209/서울특별시_공원 내 운동기구 설치 현황_20201231.csv"
 df = pd.read_csv(file_name, encoding="cp949")
-# park_equiments = df.groupby(' 구분 ')[' 운동기구 수량 '].sum()
-# park_equiments.to_string("./1209/공원별 총 운동기구 설치 수.txt", index=True)
+park_equiments = df.groupby(' 구분 ')[' 운동기구 수량 '].sum()
+park_equiments.to_string("./1209/공원별 총 운동기구 설치 수.txt", index=True)
 
-# equiments_data = df.groupby(' 운동기구 기종명 ')[' 운동기구 수량 '].sum()
-# equiments_data.to_string("./1209/운동기구 종류별 설치개수.txt", index=True)
+equiments_data = df.groupby(' 운동기구 기종명 ')[' 운동기구 수량 '].sum()
+equiments_data.to_string("./1209/운동기구 종류별 설치개수.txt", index=True)
 
-# management_agency_equiments = df.groupby(' 관리기관 ')[' 운동기구 수량 '].sum()
-# management_agency_equiments.to_string(
-#     "./1209/관리기관별 총 운동기수 설치 수.txt", index=True)
+management_agency_equiments = df.groupby(' 관리기관 ')[' 운동기구 수량 '].sum()
+management_agency_equiments.to_string(
+    "./1209/관리기관별 총 운동기수 설치 수.txt", index=True)
 
-# park_info = df[df[' 구분 '] == ' 남산공원(회현) ']
-# park_info.to_string("./1209/특정 공원 데이터 필터링.txt", index=False)
+park_info = df[df[' 구분 '] == ' 남산공원(회현) ']
+park_info.to_string("./1209/특정 공원 데이터 필터링.txt", index=False)
 
 
-# equiments_info = df[df[' 운동기구 기종명 '] == ' 스텝사이클 ']
-# equiments_info.to_string("./1209/운동기구 종류 데이터 필터링", index=False)
+equiments_info = df[df[' 운동기구 기종명 '] == ' 스텝사이클 ']
+equiments_info.to_string("./1209/운동기구 종류 데이터 필터링", index=False)
 
-# data_easc = df.sort_values(' 운동기구 수량 ', ascending=False)
-# data_easc.to_string("./1209/운동기구 수량 기준 내림차순.txt", index=True)
+data_easc = df.sort_values(' 운동기구 수량 ', ascending=False)
+data_easc.to_string("./1209/운동기구 수량 기준 내림차순.txt", index=True)
 # =========================================================================================#
 '''
 # print(df.info())

@@ -97,9 +97,9 @@ plt.rc('font', family=font)
 #     "weight": "bold"
 # }
 
+# plt.bar(categories, values)
 # categories = ['A', 'B', 'C']
 # values = [10, 15, 7]
-# # plt.bar(categories, values)
 # bars = plt.bar(categories, values, color=['r','g','b'], label="막대 샘플")
 # plt.xticks(categories, ['2023', '2024', '2025'])
 
@@ -117,32 +117,42 @@ plt.rc('font', family=font)
 # plt.show()
 # -----------------------------------------------------------
 # 수평 막대 그래프
-font = {
-    "size": 15,
-    "color": "red",
-    "style": "oblique",
-    "weight": "bold"
-}
-categories = ['A', 'B', 'C']
-values = [10, 15, 7]
+# font = {
+#     "size": 15,
+#     "color": "red",
+#     "style": "oblique",
+#     "weight": "bold"
+# }
+# categories = ['A', 'B', 'C']
+# values = [10, 15, 7]
 
-bars = plt.barh(categories, values, color=[
-                '#2233ff', '#ff2233', '#22ff33'], edgecolor="black")
+# bars = plt.barh(categories, values, color=[
+#                 '#2233ff', '#ff2233', '#22ff33'], edgecolor="black")
 
-for bar in bars:
-    plt.text(bar.get_width() + 0.5,  # x좌표
-             bar.get_y() + bar.get_height()/2,
-             str(bar.get_width()),
-             ha="right", va="center", color="green")  # y좌표 막대 중심
+# for bar in bars:
+#     plt.text(bar.get_width() + 0.5,  # x좌표
+#              bar.get_y() + bar.get_height()/2,
+#              str(bar.get_width()),
+#              ha="right", va="center", color="green")  # y좌표 막대 중심
 
-plt.legend(bars, ["A-2023", "B-2024", "C-2025"])
-# 기준선
-plt.axvline(x=values[2], linestyle="--", color="black")
+# plt.legend(bars, ["A-2023", "B-2024", "C-2025"])
+# # 기준선
+# plt.axvline(x=values[2], linestyle="--", color="black")
 
-plt.title("막대그래프 연습", pad=20)
-plt.xlabel("카테고리")
-plt.ylabel("수치")
+# plt.title("막대그래프 연습", pad=20)
+# plt.xlabel("카테고리")
+# plt.ylabel("수치")
 
-# plt.show() 창띄우기
-# 저장
-plt.savefig("./1209/graph.jpg", format="jpg")
+# # plt.show() 창띄우기
+# # 저장
+# plt.savefig("./1209/graph.jpg", format="jpg")
+# -----------------------------------------------------------
+
+categories = ['2024', '2025', '2026']
+values = [40, 20, 10]
+plt.barh(categories, values, width=0.2, align='center',
+         label='bar sample', color=['green', 'black', 'purple'])
+plt.xticks(values, [40, 20, 10])
+plt.yticks(categories, ['2024', '2025', '2026'])
+plt.title("bar grape sample")
+plt.show()

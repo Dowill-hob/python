@@ -7,7 +7,7 @@ path = "C:\\Windows\\Fonts\\Hancom Gothic Bold.ttf"
 font = font_manager.FontProperties(fname=path).get_name()
 plt.rc('font', family=font)
 # ---------------------------------------------------------------
-# 히스토그램
+# # 히스토그램
 # data = [1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5, 5, 6]
 # # bins = 5 = [1,2][2,3][3,4][4,5][5,6]
 
@@ -31,7 +31,7 @@ plt.rc('font', family=font)
 # plt.ylabel("빈도수")
 # plt.grid()
 # plt.show()
-# ---------------------------------------------------------------
+# # ---------------------------------------------------------------
 # 산점도
 # x = [1, 2, 3, 4, 5]
 # y = [2, 3, 5, 7, 11]
@@ -61,12 +61,13 @@ plt.rc('font', family=font)
 
 # plt.pie(sizes, labels=labels, explode=explode,
 #         autopct="%1.1f%%", shadow=True, startangle=140)
+# plt.show()
 # 색상 꾸미기
 # sizes = [10, 20, 30, 40]
 # labels = ['A', 'B', 'C', 'D']
 # colors = ["gold", 'lightblue', 'lightgreen', 'pink']
 
-# plt.pie(sizes, labels=labels, autopct="%1.1f%%",
+# plt.pie(sizes, labels=labels, autopct="%1.1f%%", colors=colors,
 #         textprops={"fontsize": 15, "color": "darkblue", "weight": "bold"}, wedgeprops={"edgecolor": "black"})
 
 # plt.show()
@@ -95,24 +96,24 @@ plt.rc('font', family=font)
 # plt.show()
 # ---------------------------------------------------------------
 # 실습2. 그래프 그리기
-# categories = ['Category1', 'Category2', 'Category3', 'Category4', 'Category5']
-# data = [20, 35, 15, 27, 45]
-# plt.bar(categories, data)
-# plt.figure(figsize=(8,10)) # 창 크기
-# plt.title("Bar Chart") # 제목
-# plt.xlabel("Categories") # x축
-# plt.ylabel("Values")    # y축
-# plt.xticks(rotation=45) # x축 레이블 회전
-# plt.ylim([0, 50]) # y축 limit
-# plt.grid(True,linestyle="--",alpha=0,6)
-# plt.show()
+plt.figure(figsize=(8, 10))  # 창 크기
+categories = ['Category1', 'Category2', 'Category3', 'Category4', 'Category5']
+data = [20, 35, 15, 27, 45]
+plt.bar(categories, data)
+plt.title("Bar Chart")  # 제목
+plt.xlabel("Categories")  # x축
+plt.ylabel("Values")    # y축
+plt.xticks(rotation=45)  # x축 레이블 회전
+plt.ylim([0, 50])  # y축 limit
+plt.grid(True, linestyle="--", alpha=0.5)
+plt.show()
 # ---------------------------------------------------------------
 # 실습3. 그래프 그리기
-# sizes = [34, 32, 16, 18]
-# labels = ['Apple', 'Banana', 'Melon', 'Grapes']
-# explode = [0, 0.1, 0, 0.1]
-# colors = ['#dc143c', '#ffff00', '#008000', '#800080']
-# plt.pie(sizes, labels=labels, explode=explode, colors=colors,
-#         wedgeprops={"width": 0.8, "edgecolor": "black"}, autopct="%1.1f%%", textprops={"fontsize": 15, "color": "black", "weight": "bold"})
-# plt.show()
+sizes = [34, 32, 16, 18]
+labels = ['Apple', 'Banana', 'Melon', 'Grapes']
+explode = [0, 0.1, 0, 0.1]
+colors = ['#dc143c', '#ffff00', '#008000', '#800080']
+plt.pie(sizes, labels=labels, explode=explode, colors=colors,
+        wedgeprops={"width": 0.8, "edgecolor": "black"}, autopct="%1.1f%%", textprops={"fontsize": 15, "color": "black", "weight": "bold"})
+plt.show()
 # ---------------------------------------------------------------
